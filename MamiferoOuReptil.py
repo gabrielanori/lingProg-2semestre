@@ -109,9 +109,25 @@ class Gato(Mamifero):
             return '{} morreu'.format(self.nome)
 
 
-Unicornio = Cavalo("Cavalo de Fogo", "Roxa",10, 4, "Vermelho")
+Camufla = Camaleao("Disfarce", "green", 6, "Grilo")
+print(Camufla.mudar_de_cor())
+print(Camufla.comer_inseto())
 
-print(Unicornio.galopar())
+Wildfire = Cavalo("Cavalo de Fogo", "Roxa",10, 4, "Vermelho")
+print(Wildfire.galopar())
+print(Wildfire.relinchar())
+
+Cascavel = Cobra("Orochimaru", "Vinho", 10, "Mortal")
+print(Cascavel.rastejar())
+print(Cascavel.trocar_de_pele())
+
+Pastor = Cachorro("Alemão", "Marrom", 8, 4, "Pastor Alemão")
+print(Pastor.latir())
+print(Pastor.rosnar()) 
+
+Alligator = Jacare("Cuca", "Verde", 15, 40)
+print(Alligator.atacar()) 
+print(Alligator.dormir())
 
 Siames = Gato("Garfield", "Amarelo", 5, 4, 6)
 print(Siames.miar())
