@@ -104,31 +104,33 @@ class Gato(Mamifero):
         if self.vidas > 0 and self.vidas <= 7:
            self.vidas -= 1
            return '{} tem {} vidas sobrando'.format(self.nome, self.vidas)            
-        else:
-            self.vidas == 0
+        elif self.vidas == 0:
             return '{} morreu'.format(self.nome)
+        else:
+            self.vidas > 7
+            return '{} não pode ter mais que sete vidas!!!'.format(self.nome)
 
 
-Camufla = Camaleao("Disfarce", "green", 6, "Grilo")
-print(Camufla.mudar_de_cor())
-print(Camufla.comer_inseto())
+# Camufla = Camaleao("Disfarce", "green", 6, "Grilo")
+# print(Camufla.mudar_de_cor())
+# print(Camufla.comer_inseto())
 
-Wildfire = Cavalo("Cavalo de Fogo", "Roxa",10, 4, "Vermelho")
-print(Wildfire.galopar())
-print(Wildfire.relinchar())
+# Wildfire = Cavalo("Cavalo de Fogo", "Roxa",10, 4, "Vermelho")
+# print(Wildfire.galopar())
+# print(Wildfire.relinchar())
 
-Cascavel = Cobra("Orochimaru", "Vinho", 10, "Mortal")
-print(Cascavel.rastejar())
-print(Cascavel.trocar_de_pele())
+# Cascavel = Cobra("Orochimaru", "Vinho", 10, "Mortal")
+# print(Cascavel.rastejar())
+# print(Cascavel.trocar_de_pele())
 
-Pastor = Cachorro("Alemão", "Marrom", 8, 4, "Pastor Alemão")
-print(Pastor.latir())
-print(Pastor.rosnar()) 
+# Pastor = Cachorro("Alemão", "Marrom", 8, 4, "Pastor Alemão")
+# print(Pastor.latir())
+# print(Pastor.rosnar()) 
 
-Alligator = Jacare("Cuca", "Verde", 15, 40)
-print(Alligator.atacar()) 
-print(Alligator.dormir())
+# Alligator = Jacare("Cuca", "Verde", 15, 40)
+# print(Alligator.atacar()) 
+# print(Alligator.dormir())
 
-Siames = Gato("Garfield", "Amarelo", 5, 4, 6)
+Siames = Gato("Garfield", "Amarelo", 5, 4, 8)
 print(Siames.miar())
 print(Siames.morrer())
