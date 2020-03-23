@@ -118,7 +118,7 @@ def main():
     print(Camufla.comer_inseto())
     print("==========================================")
 
-    Wildfire = Cavalo("Cavalo de Fogo", "Roxa",10, 4, "Vermelho")
+    Wildfire = Cavalo("Cavalo de Fogo", "Roxa",10, "Quadrúpede", "Vermelho")
     print(Wildfire.nome)
     print(Wildfire.cor_pelo)
     print(Wildfire.idade)
@@ -141,7 +141,7 @@ def main():
     print(Cascavel.trocar_de_pele())
     print("==========================================")
 
-    Pastor = Cachorro("Alemão", "Marrom", 8, 4, "Pastor Alemão")
+    Pastor = Cachorro("Alemão", "Marrom", 8, "Quadrúpede", "Pastor Alemão")
     print(Pastor.nome)
     print(Pastor.cor_pelo)
     print(Pastor.idade)
