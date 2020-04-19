@@ -1,2 +1,2 @@
 print("nina pelucia")
-print("muminho")
+print("minho")
